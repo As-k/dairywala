@@ -1,0 +1,91 @@
+<TableLayout android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/project_color"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableRow>
+        <TextView
+            style="@style/text_view_table_style"
+            android:text="Bill No :"/>
+
+        <TextView
+            android:background="#ffdb3c"
+            android:textColor="#000"
+            style="@style/text_view_table_style"
+            android:text="1121"
+            android:id="@+id/report_bill_no"/>
+
+        <TextView
+            style="@style/text_view_table_style"
+            android:text="Date :"/>
+
+        <TextView
+            android:background="#ffdb3c"
+            android:textColor="#000"
+            style="@style/text_view_table_style"
+            android:text="12/17/2007"
+            android:id="@+id/report_bill_date"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            style="@style/text_view_table_style"
+            android:text="Price : "/>
+        <TextView
+            android:text="75/-"
+            style="@style/text_view_table_style"
+            android:id="@+id/report_ltr_price"
+            android:textSize="20sp" />
+
+        <TextView
+            style="@style/text_view_table_style"
+            android:text="Day :"/>
+
+        <TextView
+            android:background="#ffdb3c"
+            android:textColor="#000"
+            style="@style/text_view_table_style"
+            android:text="AM/PM"
+            android:id="@+id/report_farmer_day"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            style="@style/text_view_table_style"
+            android:text="Fat % : "/>
+        <TextView
+            android:text="9.5%"
+            style="@style/text_view_table_style"
+            android:id="@+id/report_fat_con"
+            android:textSize="20sp" />
+        <TextView
+            style="@style/text_view_table_style"
+            android:text="Liter : "/>
+        <TextView
+            android:text="10"
+            style="@style/text_view_table_style"
+            android:id="@+id/report_ltr_con"
+            android:textSize="20sp"
+            />
+    </TableRow>
+    <TableRow>
+        <!--<TextView-->
+            <!--style="@style/text_view_table_style"-->
+            <!--android:text="Advance :"/>-->
+
+        <!--<TextView-->
+            <!--android:text="500/-"-->
+            <!--style="@style/text_view_table_style"-->
+            <!--android:id="@+id/report_adv"-->
+            <!--android:textSize="20sp"/>-->
+        <TextView
+            style="@style/text_view_table_style"
+            android:text="Total : "/>
+        <TextView
+            android:text="900/-"
+            style="@style/text_view_table_style"
+            android:id="@+id/report_total"
+            android:textSize="20sp"/>
+    </TableRow>
+</TableLayout>

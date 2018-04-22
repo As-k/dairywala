@@ -1,0 +1,108 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/user_register_dialog"
+    android:orientation="vertical"
+    android:background="@color/project_color"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_register_dialog_inner"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:gravity="center">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv1"
+            android:text="Registration"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"
+            android:textSize="25sp"
+            android:fontFamily="serif"
+            android:textAlignment="center"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_user_name"
+            android:textColorHint="@color/text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/user_name"
+                style="@style/edit_text_style"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="5dp"
+                android:hint="Name"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_user_cno"
+            android:textColorHint="@color/text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/user_cno"
+                style="@style/edit_text_style"
+                android:hint="Contact No"
+                android:inputType="phone"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="5dp"
+                android:maxLength="10"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_user_email"
+            android:textColorHint="@color/text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/user_email"
+                style="@style/edit_text_style"
+                android:hint="Email"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="5dp"
+                android:inputType="textEmailAddress" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_user_center"
+            android:textColorHint="@color/text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/user_center"
+                style="@style/edit_text_style"
+                android:hint="Milk Center Name"
+                android:drawableLeft="@drawable/center"
+                android:drawablePadding="5dp"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@drawable/button_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_registration"
+            android:text="Submit"/>
+
+
+    </LinearLayout>
+</LinearLayout>

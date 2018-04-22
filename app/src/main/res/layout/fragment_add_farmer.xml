@@ -1,0 +1,73 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/project_color"
+    tools:context="com.aks.dairywala.AddFarmerFragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/farmer_image"
+            android:src="@drawable/photo_camera"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/farmer_image_message"
+            android:text="Click to Take Photo"
+            android:textSize="15sp"
+            android:textColor="#ffeb39"
+            android:textStyle="bold"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_farmer_id"
+            style="@style/text_input_layout_style">
+            <EditText
+                android:layout_margin="5dp"
+                style="@style/edit_text_style"
+                android:id="@+id/farmer_id"
+                android:drawableLeft="@drawable/name"
+                android:inputType="number"
+                android:hint="Idno"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_farmer_name"
+            style="@style/text_input_layout_style">
+            <EditText
+                style="@style/edit_text_style"
+                android:id="@+id/farmer_name"
+                android:drawableLeft="@drawable/user"
+                android:inputType="textPersonName"
+                android:hint="Name"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_farmer_cno"
+            style="@style/text_input_layout_style">
+            <EditText
+                style="@style/edit_text_style"
+                android:id="@+id/farmer_contact_no"
+                android:inputType="phone"
+                android:layout_margin="5dp"
+                android:hint="Contact No"
+                android:drawableLeft="@drawable/phone"
+                android:maxLength="10"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            style="@style/button1_style"
+            android:text="Save"
+            android:id="@+id/framer_save"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

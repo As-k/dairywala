@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/project_color"
+    android:layout_height="match_parent"
+    tools:context="com.aks.dairywala.MilkFragment">
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textSize="25sp"
+            android:textStyle="bold"
+            style="@style/text_view_style"
+            android:text="Advance Payments"
+            android:textColor="@color/text_color"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:text="Date"
+            android:id="@+id/advance_date"
+            style="@style/text_view_style"
+            android:layout_marginBottom="10dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_amt"
+            android:textColorHint="@color/text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp">
+
+            <EditText
+                style="@style/edit_text_style"
+                android:hint="Amount"
+                android:ems="10"
+                android:id="@+id/advance_amount"
+                android:inputType="numberDecimal"
+                android:drawableLeft="@drawable/rupee"
+                android:drawablePadding="5dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            style="@style/button1_style"
+            android:layout_marginTop="15dp"
+            android:id="@+id/advance_button"
+            android:text="Save"/>
+
+    </LinearLayout>
+
+</FrameLayout>

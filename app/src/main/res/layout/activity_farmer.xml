@@ -1,0 +1,34 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/farmer_ll"
+    android:background="@color/project_color"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextColor="#b8bcc1"
+        app:tabBackground="@color/project_color"
+        app:tabSelectedTextColor="@color/text_color"
+        android:id="@+id/tl1">
+
+        <android.support.design.widget.TabItem
+            android:text="Add"
+            style="@style/text_view_style"/>
+
+        <android.support.design.widget.TabItem
+            android:text="View"
+            style="@style/text_view_style"/>
+
+    </android.support.design.widget.TabLayout>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/farmer_fg"
+        class="com.aks.dairywala.AddFarmerFragment"/>
+
+</LinearLayout>

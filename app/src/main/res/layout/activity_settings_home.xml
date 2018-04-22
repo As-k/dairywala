@@ -1,0 +1,103 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/project_color"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        style="@style/button_style"
+        android:onClick="addFat"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/addFatRate"
+        android:text="Add Fat Rate"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/old_fat"
+        android:text="Old Fat Rate : "
+        android:textColor="#ffdb3c"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_fatrate"
+        android:visibility="gone"
+        android:textColorHint="@color/text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp">
+    <EditText
+        android:visibility="gone"
+        style="@style/edit_text_style"
+        android:inputType="numberDecimal"
+        android:hint="Fat Rate"
+        android:drawableLeft="@drawable/rupee"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/fatRate"/>
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:visibility="gone"
+        style="@style/button1_style"
+        android:id="@+id/b1"
+        android:layout_marginBottom="5dp"
+        android:onClick="saveFat"
+        android:text="Save"/>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        style="@style/button_style"
+        android:layout_height="50dp"
+        android:layout_width="250dp"
+        android:id="@+id/addMilkCenter"
+        android:onClick="addCenter"
+        android:text="Add Milk Center"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_ucn"
+        android:visibility="gone"
+        android:textColorHint="@color/text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp">
+        <EditText
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            style="@style/edit_text_style"
+            android:drawableLeft="@drawable/center"
+            android:inputType="text"
+            android:hint="Milk Center Name"
+            android:id="@+id/centerName"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_cno"
+        android:textColorHint="@color/text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_margin="2dp">
+        <EditText
+            android:visibility="gone"
+            android:maxLength="10"
+            android:layout_marginBottom="5dp"
+            style="@style/edit_text_style"
+            android:drawableLeft="@drawable/phone"
+            android:inputType="phone"
+            android:hint="Contact No"
+            android:id="@+id/contact_no"/>
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:visibility="gone"
+        android:layout_marginBottom="5dp"
+        style="@style/button1_style"
+        android:id="@+id/b2"
+        android:onClick="saveCenter"
+        android:text="Save"/>
+
+</LinearLayout>

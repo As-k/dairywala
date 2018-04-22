@@ -1,0 +1,56 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/project_color"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_from"
+        android:textColorHint="@color/text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+        <EditText
+            style="@style/edit_text_style"
+            android:hint="From Date"
+            android:id="@+id/fromdate"
+            android:drawableRight="@drawable/date"
+            android:paddingRight="12dp"
+            android:paddingLeft="20dp"
+            android:layout_margin="5dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_to"
+        android:textColorHint="@color/text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <EditText
+            style="@style/edit_text_style"
+            android:hint="To Date"
+            android:drawableRight="@drawable/date"
+            android:paddingRight="12dp"
+            android:paddingLeft="20dp"
+            android:layout_margin="5dp"
+            android:id="@+id/todate"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        style="@style/button1_style"
+        android:text="Show"
+        android:id="@+id/show"
+        android:layout_margin="15dp"
+        android:onClick="showList"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/show_list"
+        android:divider="@color/text_color"
+        android:dividerHeight="1dp"/>
+
+</LinearLayout>

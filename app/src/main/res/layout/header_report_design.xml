@@ -1,0 +1,60 @@
+<LinearLayout android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/project_color"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/header_farmer_image"
+        android:src="@drawable/photo_camera"/>
+
+    <TableLayout android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/project_color">
+
+        <TableRow>
+            <TextView
+                style="@style/text_view_table_style"
+                android:text="Id No :"
+                android:textSize="20dp"/>
+
+            <TextView
+                style="@style/text_view_table_style"
+                android:text="1121"
+                android:textSize="20dp"
+                android:id="@+id/header_id_no"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:textSize="20dp"
+                style="@style/text_view_table_style"
+                android:text="Name :"/>
+
+            <TextView
+                style="@style/text_view_table_style"
+                android:text="Rajesh"
+                android:id="@+id/header_name"
+                android:textSize="20dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:textSize="20dp"
+                style="@style/text_view_table_style"
+                android:text="Contact No :"/>
+
+            <TextView
+                style="@style/text_view_table_style"
+                android:text="12/17/2007"
+                android:id="@+id/header_cno"
+                android:textSize="20dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>

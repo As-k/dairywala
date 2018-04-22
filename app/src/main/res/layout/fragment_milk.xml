@@ -1,0 +1,144 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/project_color"
+    android:layout_height="match_parent"
+    tools:context="com.aks.dairywala.MilkFragment">
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/farmer_bill_image"
+            android:src="@drawable/icon1"
+            android:layout_marginBottom="15dp"/>
+
+        <TableLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView
+                    style="@style/text_view_table_style"
+                    android:text="Bill No :"/>
+
+                <TextView
+                    android:background="#ffdb3c"
+                    android:textColor="#000"
+                    style="@style/text_view_table_style"
+                    android:text="1121"
+                    android:id="@+id/milk_farmer_bill_no"/>
+
+                <TextView
+                    style="@style/text_view_table_style"
+                    android:text="Date :"/>
+
+                <TextView
+                    android:background="#ffdb3c"
+                    android:textColor="#000"
+                    style="@style/text_view_table_style"
+                    android:text="12/17/2007"
+                    android:id="@+id/milk_farmer_bill_date"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    style="@style/text_view_table_style"
+                    android:text="ID No :"/>
+
+                <TextView
+                    android:background="#ffdb3c"
+                    android:textColor="#000"
+                    style="@style/text_view_table_style"
+                    android:text="101"
+                    android:id="@+id/milk_farmer_id"/>
+
+                <TextView
+                    style="@style/text_view_table_style"
+                    android:text="Day :"/>
+
+                <TextView
+                    android:background="#ffdb3c"
+                    android:textColor="#000"
+                    style="@style/text_view_table_style"
+                    android:text="AM/PM"
+                    android:id="@+id/milk_farmer_day"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/text_view_table_style"
+                    android:text="Name :"/>
+
+                <TextView
+                    android:background="#ffdb3c"
+                    android:textColor="#000"
+                    style="@style/text_view_table_style"
+                    android:text="Krishna"
+                    android:id="@+id/milk_farmer_name"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_fat"
+            android:textColorHint="@color/text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp">
+
+            <EditText
+                android:id="@+id/milk_farmer_fat"
+                android:inputType="numberDecimal"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/fat"
+                android:drawablePadding="5dp"
+                style="@style/edit_text_style"
+                android:hint="Fat"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_ltrs"
+            android:textColorHint="@color/text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp">
+
+            <EditText
+                android:id="@+id/milk_farmer_ltrs"
+                android:inputType="numberDecimal"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/litre"
+                android:drawablePadding="5dp"
+                style="@style/edit_text_style"
+                android:hint="Ltr's"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/milk_farmer_total"
+            style="@style/text_view_style"
+            android:text="Total Amount"
+            android:drawableLeft="@drawable/rupees"
+            android:drawablePadding="5dp"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/milk_farmer_save"
+            android:layout_marginTop="10dp"
+            style="@style/button1_style"
+            android:text="Save"/>
+
+    </LinearLayout>
+
+</FrameLayout>

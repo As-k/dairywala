@@ -1,0 +1,66 @@
+<LinearLayout android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/project_color"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableLayout android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/project_color">
+
+        <TableRow>
+            <TextView
+                style="@style/text_view_table_style"
+                android:text="Total Amount :"
+                android:textSize="20dp"/>
+
+            <TextView
+                style="@style/text_view_table_style"
+                android:text="0.00/-"
+                android:textAlignment="textStart"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/rupees"
+                android:paddingLeft="20dp"
+                android:textSize="20dp"
+                android:id="@+id/footer_total_amt"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:textSize="20dp"
+                style="@style/text_view_table_style"
+                android:text="Advance Amount :"/>
+
+            <TextView
+                style="@style/text_view_table_style"
+                android:text="0.00/-"
+                android:drawableLeft="@drawable/rupees"
+                android:paddingLeft="20dp"
+                android:textAlignment="textStart"
+                android:drawablePadding="5dp"
+                android:id="@+id/footer_adv_amt"
+                android:textSize="20dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:textSize="20dp"
+                style="@style/text_view_table_style"
+                android:text="Balance :"/>
+
+            <TextView
+                style="@style/text_view_table_style"
+                android:text="0.00/-"
+                android:drawableLeft="@drawable/rupees"
+                android:paddingLeft="20dp"
+                android:textAlignment="textStart"
+                android:drawablePadding="5dp"
+                android:id="@+id/footer_bal_amt"
+                android:textSize="20dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>
